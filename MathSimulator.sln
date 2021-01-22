@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29721.120
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSimulator", "MathSimulator\MathSimulator.csproj", "{58FE37F4-77B7-40B3-8E70-B0CE358D7DF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58FE37F4-77B7-40B3-8E70-B0CE358D7DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FE37F4-77B7-40B3-8E70-B0CE358D7DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FE37F4-77B7-40B3-8E70-B0CE358D7DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FE37F4-77B7-40B3-8E70-B0CE358D7DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {561D9235-F7E9-42FA-A273-14D33FB872F4}
+	EndGlobalSection
+EndGlobal

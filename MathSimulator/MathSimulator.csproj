@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58FE37F4-77B7-40B3-8E70-B0CE358D7DF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MathSimulator</RootNamespace>
+    <AssemblyName>MathSimulator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoodleJump_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoodleJump_Form.Designer.cs">
+      <DependentUpon>DoodleJump_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlappyBird_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlappyBird_Form.Designer.cs">
+      <DependentUpon>FlappyBird_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logics\Doodle Jump\Physics.cs" />
+    <Compile Include="Logics\Doodle Jump\Platform.cs" />
+    <Compile Include="Logics\Doodle Jump\PlatformController.cs" />
+    <Compile Include="Logics\Doodle Jump\Player.cs" />
+    <Compile Include="Logics\Flappy Bird\Obstacles.cs" />
+    <Compile Include="Logics\Flappy Bird\Player.cs" />
+    <Compile Include="Logics\MathSimulator.cs" />
+    <Compile Include="Logics\Doodle Jump\Transform.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorForm.Designer.cs">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logics\Calculator.cs" />
+    <Compile Include="MathSimulatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathSimulatorForm.Designer.cs">
+      <DependentUpon>MathSimulatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OSU_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OSU_Form.Designer.cs">
+      <DependentUpon>OSU_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoodleJump_Form.resx">
+      <DependentUpon>DoodleJump_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlappyBird_Form.resx">
+      <DependentUpon>FlappyBird_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorForm.resx">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathSimulatorForm.resx">
+      <DependentUpon>MathSimulatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OSU_Form.resx">
+      <DependentUpon>OSU_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cicrle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pipe.png" />
+    <None Include="Resources\Background.png" />
+    <None Include="Resources\Bird.png" />
+    <None Include="Resources\flappy-bird.gif" />
+    <None Include="Resources\background doodle jump.png" />
+    <None Include="Resources\platform.png" />
+    <None Include="Resources\man.jpg" />
+    <None Include="Resources\doodle.jpg" />
+    <None Include="Resources\doodle.png" />
+    <Content Include="Resources\pngtree-alcohol-abstract-trendy-acrylic-dirty-painting-alcohol-ink-creative-art-abstract-image_441419.jpg" />
+    <None Include="Resources\Target.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
